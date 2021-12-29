@@ -5,6 +5,7 @@ const bodyParser = require('body-parser')
 const config = process.env
 const PORT = config.PORT
 
+app.use(express.static("public"))
 app.use(bodyParser.json())
 app.listen(PORT, () => console.log(`Testing app listening on port ${PORT}`))
 app.use("/", webhookRouter.router)
