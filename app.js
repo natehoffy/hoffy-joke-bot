@@ -15,4 +15,4 @@ app.get('/', function(req, res) {
 });
 //app.post("/", webhookRouter.router)
 app.post("/", processWebhook)
-app.listen(PORT || 4040, () => console.log(`Testing app listening on port ${PORT}`))
+app.listen(PORT, () => console.log(`Testing app listening on port ${PORT}`))
