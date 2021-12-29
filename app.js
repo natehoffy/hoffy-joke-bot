@@ -7,5 +7,5 @@ const PORT = config.PORT
 
 app.use(express.static("public"))
 app.use(bodyParser.json())
-app.listen(PORT, () => console.log(`Testing app listening on port ${PORT}`))
+app.listen(PORT || 4040, () => console.log(`Testing app listening on port ${PORT}`))
 app.use("/", webhookRouter.router)
