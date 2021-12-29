@@ -1,5 +1,5 @@
 //const webhookRouter = require("./routes/webhookRouter")
-const {processWebhook} = require("../controllers/webhookController")
+const {processWebhook} = require("./controllers/webhookController")
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
